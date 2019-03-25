@@ -1,0 +1,25 @@
+{
+  "name": "update-qbittorrent-cert",
+  "version": "1.0.0",
+  "description": "Script to update qbittorrent ssl certificate after renewal",
+  "main": "update-qbittorrent-cert.js",
+  "scripts": {
+    "install-letsencrypt": "sudo cp update-qbittorrent-cert.js /etc/letsencrypt/renewal-hooks/deploy/update-qbittorrent-cert.js",
+    "install-script": "run() { sudo cp update-qbittorrent-cert.js $1/update-qbittorrent-cert.js; }; run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoryG89/update-qbittorrent-cert.git"
+  },
+  "keywords": [
+    "qbittorrent",
+    "ssl",
+    "certificate"
+  ],
+  "author": "Cory Gross",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CoryG89/update-qbittorrent-cert/issues"
+  },
+  "homepage": "https://github.com/CoryG89/update-qbittorrent-cert#readme"
+}
